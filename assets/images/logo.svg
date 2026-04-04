@@ -1,0 +1,59 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Dark Tech/AI Background Gradient -->
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="0.4" stop-color="#0F172A"/>
+      <stop offset="0.8" stop-color="#1264FF"/>
+      <stop offset="1" stop-color="#1DD3F8"/>
+    </linearGradient>
+    
+    <!-- Crisp White-Silver Gradient for the "A" -->
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E2E8F0"/>
+    </linearGradient>
+
+    <!-- Luminous Cyan Gradient for the AI Star -->
+    <linearGradient id="star-cyan" x1="0" y1="0" x2="0" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#A5F3FC"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#22D3EE" flood-opacity="0.6"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- App Tile Background -->
+  <rect x="32" y="32" width="448" height="448" rx="100" fill="url(#bg-grad)"/>
+
+  <!-- Iconic 'A' / Builder Structure -->
+  <g filter="url(#shadow)">
+    <!-- Base triangle structure -->
+    <path d="M150 360 L256 160 L362 360" stroke="url(#glass)" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Crossbar -->
+    <path d="M190 285 L322 285" stroke="url(#glass)" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Central AI Sparkle overlapping the apex -->
+  <path d="M256 60 
+           C256 102 274 120 316 120 
+           C274 120 256 138 256 180 
+           C256 138 238 120 196 120 
+           C238 120 256 102 256 60 Z" 
+        fill="url(#star-cyan)" filter="url(#glow)"/>
+        
+  <!-- Secondary Sparkle -->
+  <path d="M370 125 
+           C370 142.5 377.5 150 395 150 
+           C377.5 150 370 157.5 370 175 
+           C370 157.5 362.5 150 345 150 
+           C362.5 150 370 142.5 370 125 Z" 
+        fill="url(#star-cyan)" opacity="0.9" filter="url(#glow)"/>
+</svg>

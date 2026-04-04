@@ -1,0 +1,132 @@
+/**
+ * Frontend base styles.
+ *
+ * Minimal CSS for builder pages rendered on the frontend.
+ * Applied only to pages using the Antimanual Builder.
+ *
+ * @package Antimanual_Builder
+ * @since   1.0.0
+ */
+
+/* Box sizing reset */
+.amb-page *,
+.amb-page *::before,
+.amb-page *::after {
+	box-sizing: border-box;
+}
+
+/* Base body styles */
+.amb-page {
+	margin: 0;
+	padding: 0;
+	font-family: var(--amb-font-family, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif);
+	font-size: var(--amb-base-size, 16px);
+	line-height: var(--amb-line-height, 1.6);
+	color: var(--amb-color-text, #1e293b);
+	background: var(--amb-color-background, #ffffff);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Images */
+.amb-page img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Links */
+.amb-page a {
+	color: var(--amb-color-primary, #6366f1);
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.amb-page a:hover {
+	color: var(--amb-color-secondary, #8b5cf6);
+}
+
+/* Headings */
+.amb-page h1,
+.amb-page h2,
+.amb-page h3,
+.amb-page h4,
+.amb-page h5,
+.amb-page h6 {
+	font-family: var(--amb-heading-family, var(--amb-font-family, 'Inter', sans-serif));
+	font-weight: var(--amb-heading-weight, 700);
+	line-height: 1.3;
+	margin-top: 0;
+}
+
+/* Buttons */
+.amb-block--button {
+	display: inline-block;
+	padding: var(--amb-btn-padding, 12px 24px);
+	border-radius: var(--amb-btn-border-radius, 8px);
+	font-weight: var(--amb-btn-font-weight, 600);
+	font-size: var(--amb-btn-font-size, 14px);
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	text-decoration: none;
+}
+
+.amb-block--button:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Section */
+.amb-block--section {
+	width: 100%;
+}
+
+.amb-section__inner {
+	max-width: var(--amb-spacing-container-max, 1200px);
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Row */
+.amb-block--row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+	.amb-block--row {
+		flex-direction: column;
+	}
+
+	.amb-block--column {
+		width: 100% !important;
+	}
+}
+
+/* Divider */
+.amb-block--divider {
+	border: none;
+	border-top: 1px solid var(--amb-color-border, #e2e8f0);
+}
+
+/* Header & Footer */
+.amb-header,
+.amb-footer {
+	width: 100%;
+}
+
+/* Main content area */
+.amb-main {
+	min-height: 100vh;
+}
+
+/* Lazy loading fade-in */
+.amb-page img[loading="lazy"] {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.amb-page img[loading="lazy"].loaded,
+.amb-page img[loading="lazy"][src] {
+	opacity: 1;
+}
